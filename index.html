@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <input id="input" type="text" name="display" placeholder="0" />
+        <div class="row">
+          <button class="calc-button" onclick="deg()">DEG</button>
+          <button class="calc-button" onclick="fe()">F-E</button>
+        </div>
+
+        <div class="row">
+          <button
+            class="calc-button memory-button"
+            id="memoryClear"
+            onclick="memoryClear()"
+          >
+            MC
+          </button>
+          <button
+            class="calc-button memory-button"
+            id="memoryRecall"
+            onclick="memoryRecall()"
+          >
+            MR
+          </button>
+          <button
+            class="calc-button memory-button"
+            id="memoryPlus"
+            onclick="memoryPlus()"
+          >
+            M+
+          </button>
+          <button
+            class="calc-button memory-button"
+            id="memoryMinus"
+            onclick="memoryMinus()"
+          >
+            M-
+          </button>
+          <button
+            class="calc-button memory-button"
+            id="memoryStore"
+            onclick="memoryStore()"
+          >
+            MS
+          </button>
+        </div>
+        <div class="row dropdown-button-container">
+          <button class="dropdown-button" onclick="showDropdown1()">
+            <span class="material-symbols-outlined"> change_history </span>
+            Trigonometry<span class="material-symbols-outlined">
+              expand_more
+            </span>
+          </button>
+          <div id="myDropdown1" class="dropdown-content1">
+            <ul>
+              <li><a onclick="sin()">sin(x)</a></li>
+              <li><a onclick="cos()">cos(x)</a></li>
+              <li><a onclick="tan()">tan(x)</a></li>
+            </ul>
+          </div>
+          <button class="dropdown-button" onclick="showDropdown2()">
+            <span class="material-symbols-outlined"> function </span>
+            Function<span class="material-symbols-outlined"> expand_more </span>
+          </button>
+          <div id="myDropdown2" class="dropdown-content2">
+            <ul>
+              <li><a onclick="abs()">abx(x)</a></li>
+              <li><a onclick="floor()">floor(x)</a></li>
+              <li><a onclick="ceil()">ceil(x)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <button class="calc-button" onclick="toPower()">
+            2<sup>nd</sup>
+          </button>
+          <button class="calc-button" onclick="pi()">π</button>
+          <button class="calc-button" onclick="e()">e</button>
+          <button class="calc-button" onclick="clearAll()">C</button>
+          <button class="calc-button" onclick="back()">
+            <span class="material-symbols-outlined"> backspace </span>
+          </button>
+        </div>
+        <div class="row">
+          <button class="calc-button" onclick="square()">x<sup>2</sup></button>
+          <button class="calc-button" onclick="fraction()">
+            <sup>1</sup>&frasl;<sub>x</sub>
+          </button>
+          <button class="calc-button" onclick="modulus()">|x|</button>
+          <button class="calc-button" onclick="exp()">exp</button>
+          <button class="calc-button">mod</button>
+        </div>
+        <div class="row">
+          <button class="calc-button" onclick="sqrt()">&Sqrt;x</button>
+          <button class="calc-button" onclick="input('&#40;')">(</button>
+          <button class="calc-button" onclick="input('&#41;')">)</button>
+          <button class="calc-button" onclick="factorial()">n!</button>
+          <button class="calc-button" onclick="input('/')">&div;</button>
+        </div>
+        <div class="row">
+          <button class="calc-button" onclick="input('**')">
+            x<sup>y</sup>
+          </button>
+          <button class="calc-button bg-white" onclick="input(7)">7</button>
+          <button class="calc-button bg-white" onclick="input(8)">8</button>
+          <button class="calc-button bg-white" onclick="input(9)">9</button>
+          <button class="calc-button" onclick="input('*')">&times;</button>
+        </div>
+        <div class="row">
+          <button class="calc-button" onclick="pow()">10<sup>x</sup></button>
+          <button class="calc-button bg-white" onclick="input(4)">4</button>
+          <button class="calc-button bg-white" onclick="input(5)">5</button>
+          <button class="calc-button bg-white" onclick="input(6)">6</button>
+          <button class="calc-button" onclick="input('-')">&minus;</button>
+        </div>
+        <div class="row">
+          <button class="calc-button" onclick="log()">log</button>
+          <button class="calc-button bg-white" onclick="input(1)">1</button>
+          <button class="calc-button bg-white" onclick="input(2)">2</button>
+          <button class="calc-button bg-white" onclick="input(3)">3</button>
+          <button class="calc-button" onclick="input('+')">&plus;</button>
+        </div>
+        <div class="row">
+          <button class="calc-button" onclick="ln()">ln</button>
+          <button class="calc-button bg-white" onclick="changeSign()">
+            <sup>+</sup>&frasl;<sub>-</sub>
+          </button>
+          <button class="calc-button bg-white" onclick="input(0)">0</button>
+          <button class="calc-button bg-white" onclick="input('.')">.</button>
+          <button class="calc-button" onclick="calcEqual()">&equals;</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

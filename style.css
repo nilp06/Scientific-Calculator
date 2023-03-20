@@ -1,0 +1,121 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.container {
+	background-color: rgb(179, 207, 218);
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.calculator {
+	background-color: rgb(226, 226, 224);
+}
+
+.calculator input[type="text"] {
+	height: 5rem;
+	width: 100%;
+	line-height: 5rem;
+	font-size: 2rem;
+	text-align: right;
+	outline: none;
+	border: none;
+	background-color: rgb(226, 226, 224);
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.calc-button {
+	outline: none;
+	font-size: 1.25rem;
+	line-height: 1.25rem;
+	padding: 0.5rem;
+	width: 5vw;
+	margin: 0.2rem;
+	outline: none;
+	border: none;
+}
+
+.bg-white {
+	background-color: white;
+}
+
+.calc-button:hover {
+	background-color: rgb(41, 140, 227);
+}
+
+.dropdown-button {
+	color: black;
+	outline: none;
+	border: none;
+	font-size: 1.25rem;
+	line-height: 1.25rem;
+	padding: 0.5rem;
+	margin: 0.2rem;
+}
+
+.dropdown-button span {
+	line-height: 1.25rem;
+}
+
+.memory-button:disabled {
+			background-color: rgba(226, 226, 224, 0.911);
+}
+
+.dropdown-button-container {
+	position: relative;
+}
+
+.dropdown-content1 {
+	display: none;
+	position: absolute;
+	top: 2.75rem;
+	left: 0.25rem;
+	z-index: 1;
+	background-color: #f3f3f3;
+}
+
+.dropdown-content1 ul {
+	list-style: none;
+}
+
+.dropdown-content1 ul li {
+	font-size: 1.25rem;
+	line-height: 1.25rem;
+	padding: 0.5rem 2rem;
+}
+
+.dropdown-content1 ul li:hover {
+	background-color: rgb(41, 140, 227);
+}
+
+.dropdown-content2 {
+	display: none;
+	position: absolute;
+	top: 2.75rem;
+	left: 13vw;
+	z-index: 1;
+	background-color: #f3f3f3;
+}
+
+.dropdown-content2 ul {
+	list-style: none;
+}
+
+.dropdown-content2 ul li {
+	font-size: 1.25rem;
+	line-height: 1.25rem;
+	padding: 0.5rem 2rem;
+}
+
+.dropdown-content2 ul li:hover {
+	background-color: rgb(41, 140, 227);
+}
